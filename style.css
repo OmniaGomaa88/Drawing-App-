@@ -33,10 +33,11 @@ cursor: pointer;
     }
     .tools .btn:hover{
       box-shadow: inset 150px 0 0 0 rgb(253, 250, 250);
-    color:  rgb(113, 185, 31);
+    color: gray
     }
 canvas{
-    background-color: rgb(247, 241, 247);
+    background-color: rgb(247, 241, 247); 
     box-shadow: -3px 2px 9px 6px black;
     align-self: center;
+    margin-right: 20%;
 }
