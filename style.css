@@ -1,8 +1,42 @@
 body{ 
-    background-color: aqua;
-    color: black;
+    background-color: rgb(13, 14, 14);
+    color: white;
+    margin: 0%;
+    padding: 30px;
+    overflow: hidden;
 }
-.btn{
-    color: black;
-    border: black solid 2px;
+.tools .color-fild{
+height: 40px;
+width: 40px;
+min-height: 40px;
+min-width: 40px;
+cursor: pointer;
+display: inline-block;
+border-radius: 50%;
+border: 2px solid white;
+align-self: center;
+}
+.tools .btn{
+    margin-left: 2%;
+    color: white;
+    border: 2px solid #979793;
+    background-color: rgb(85, 88, 82);
+    border-radius: 5% ;
+    font-weight: bold;
+    width: 100px;
+  height: 50px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  box-shadow: inset 0 0 0 0 rgb(177, 174, 174);
+transition: ease-out 0.4s;
+outline: none;
+cursor: pointer;
+    }
+    .tools .btn:hover{
+      box-shadow: inset 150px 0 0 0 rgb(253, 250, 250);
+    color:  rgb(113, 185, 31);
+    }
+canvas{
+    background-color: rgb(247, 241, 247);
+    box-shadow: -3px 2px 9px 6px black;
+    align-self: center;
 }
