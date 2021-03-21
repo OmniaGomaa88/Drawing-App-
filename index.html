@@ -12,18 +12,17 @@
         <canvas id="canavs">
         </canvas>
         <div class="tools"><!-- for the buttons and colors chnaging -->
-            <button type="button" class="btn">Undo</button>
             <button type="button" class="btn">clear</button>
             <div onclick="changColor(this)" class="color-fild" style="background-color: red;"></div>
-            <div  onclick="changColor(this)" class="color-fild" style="background-color: blue;"></div>
-            <div  onclick="changColor(this)" class="color-fild "style="background-color: blueviolet;"></div>
-            <div  onclick="changColor(this)" class="color-fild" style="background-color: brown;"></div>
-            <div  onclick="changColor(this)" class="color-fild" style="background-color: yellow;"></div>
-            <div  onclick="changColor(this)" class="color-fild" style="background-color: olive;"></div>
-            <div  onclick="changColor(this)" class="color-fild"style="background-color: green;"></div>
-            <div class="color-fild" style="background-color: gray;"></div>
+            <div onclick="changColor(this)" class="color-fild" style="background-color: blue;"></div>
+            <div onclick="changColor(this)" class="color-fild "style="background-color: blueviolet;"></div>
+            <div onclick="changColor(this)" class="color-fild" style="background-color: brown;"></div>
+            <div onclick="changColor(this)" class="color-fild" style="background-color: yellow;"></div>
+            <div onclick="changColor(this)" class="color-fild" style="background-color: olive;"></div>
+            <div onclick="changColor(this)" class="color-fild"style="background-color: green;"></div>
+            <div onclick="changColor(this)" class="color-fild" style="background-color: gray;"></div>
             <input oninput="drawColor=this.value" type="color" class="colorBiker">
-            <input type="range" min="1" max="20" class="pen-rage">
+            <input oninput="drowPenWidth=this.value" type="range" min="1" max="20" class="pen-rage">
         </div> 
     </div>
     <script src="app.js"></script>

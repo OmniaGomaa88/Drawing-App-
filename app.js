@@ -41,6 +41,7 @@ function drow(event){
             context.lineCap="round"
             context.lineJoin="round"
             context.stroke()
+            console.log(context.getImageData(0,0,canavas.width,canavas.height))
         }
         event.preventDefault()
 }
@@ -53,7 +54,16 @@ if(isDrowing){
 }
 event.preventDefault()
 }
+// ..........
+
 // function pour change les colors
 function changColor(el){
     drawColor=el.style.backgroundColor
 }
+// button clear 
+let ClearButton=document.querySelector("button")
+
+ClearButton.addEventListener("click",function(){
+            console.log("hi")
+            context.clearRect(0,0,canavas.width,canavas.height)
+    })
