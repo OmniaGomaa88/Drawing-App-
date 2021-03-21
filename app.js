@@ -7,8 +7,8 @@ canavas.width=window.innerWidth
  context.fillStyle="white"
  context.fillRect(0,0,canavas.width,canavas.height)
 // the tooll for drowing
- let drawColor="balck"
- let drowPenWidth="2"
+ let drawColor="balck"// default color
+ let drowPenWidth="2"// default size of pen
 //  variable to chickng drowing
  let isDrowing=false
 
@@ -38,8 +38,8 @@ function drow(event){
             event.clientY - canavas.offsetTop)
             context.strokeStyle=drawColor
             context.lineWidth=drowPenWidth
-            context.lineCap="butt"
-            context.lineJoin="miter"
+            context.lineCap="round"
+            context.lineJoin="round"
             context.stroke()
         }
         event.preventDefault()
@@ -52,4 +52,8 @@ if(isDrowing){
     isDrowing=false
 }
 event.preventDefault()
+}
+// function pour change les colors
+function changColor(el){
+    drawColor=el.style.backgroundColor
 }
